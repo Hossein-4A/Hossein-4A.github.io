@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Hossein | Portfolio</title>
 
-    <meta name="description" content="Hossein's personal portfolio — Engineering, Data Analytics, Technology and Projects.">
+    <meta name="description"
+        content="Hossein's personal portfolio - Engineering, Data Analytics, Technology and Projects.">
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
+    <!-- Vazirmatn + Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 
 <body>
 
@@ -28,24 +33,57 @@
                 HOSSEIN<span>.</span>
             </a>
 
+
             <nav class="navigation">
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
+
+                <a href="#about" data-en="About" data-fa="درباره من">
+                    About
+                </a>
+
+                <a href="#projects" data-en="Projects" data-fa="پروژه‌ها">
+                    Projects
+                </a>
+
+                <a href="#skills" data-en="Skills" data-fa="مهارت‌ها">
+                    Skills
+                </a>
+
+                <a href="#education" data-en="Education" data-fa="تحصیلات">
+                    Education
+                </a>
+
+                <a href="#contact" data-en="Contact" data-fa="تماس">
+                    Contact
+                </a>
+
             </nav>
 
-            <a href="#contact" class="nav-button">
-                Contact Me
-            </a>
+
+            <div class="nav-right">
+
+                <!-- Language Switch -->
+
+                <button id="languageToggle" class="language-button">
+                    <span id="languageText">FA</span>
+                </button>
+
+
+                <a href="#contact" class="nav-button"
+                    data-en="Contact Me"
+                    data-fa="تماس با من">
+                    Contact Me
+                </a>
+
+            </div>
 
         </div>
 
     </header>
 
 
+
     <main>
+
 
         <!-- ================= HERO ================= -->
 
@@ -55,30 +93,49 @@
 
                 <div class="hero-text">
 
-                    <p class="eyebrow">
+                    <p class="eyebrow"
+                        data-en="ENGINEERING STUDENT & PROBLEM SOLVER"
+                        data-fa="دانشجوی مهندسی و علاقه‌مند به حل مسئله">
                         ENGINEERING STUDENT & PROBLEM SOLVER
                     </p>
 
-                    <h1>
+
+                    <h1
+                        data-en="Hi, I'm <span>Hossein.</span>"
+                        data-fa="سلام، من <span>حسین</span> هستم.">
                         Hi, I'm <span>Hossein.</span>
                     </h1>
 
-                    <h2>
+
+                    <h2
+                        data-en="Engineering · Data · Technology"
+                        data-fa="مهندسی · داده · فناوری">
                         Engineering · Data · Technology
                     </h2>
 
-                    <p class="hero-description">
+
+                    <p class="hero-description"
+                        data-en="I enjoy turning complex problems into practical solutions through data analysis, engineering, technology and structured thinking."
+                        data-fa="به تبدیل مسائل پیچیده به راهکارهای کاربردی از طریق تحلیل داده، مهندسی، فناوری و تفکر ساختاریافته علاقه‌مندم.">
                         I enjoy turning complex problems into practical solutions
                         through data analysis, engineering, technology and structured thinking.
                     </p>
 
+
                     <div class="hero-buttons">
 
-                        <a href="#projects" class="primary-button">
+                        <a href="#projects"
+                            class="primary-button"
+                            data-en="View My Projects"
+                            data-fa="مشاهده پروژه‌ها">
                             View My Projects
                         </a>
 
-                        <a href="#about" class="secondary-button">
+
+                        <a href="#about"
+                            class="secondary-button"
+                            data-en="About Me"
+                            data-fa="درباره من">
                             About Me
                         </a>
 
@@ -91,6 +148,7 @@
         </section>
 
 
+
         <!-- ================= ABOUT ================= -->
 
         <section class="section" id="about">
@@ -99,63 +157,134 @@
 
                 <div class="section-heading">
 
-                    <p class="section-label">
+                    <p class="section-label"
+                        data-en="ABOUT"
+                        data-fa="درباره من">
                         ABOUT
                     </p>
 
-                    <h2>
+
+                    <h2
+                        data-en="A little about me"
+                        data-fa="کمی درباره من">
                         A little about me
                     </h2>
 
                 </div>
 
+
                 <div class="about-content">
+
 
                     <div class="about-text">
 
-                        <p>
+                        <p
+                            data-en="I'm an engineering student interested in data analysis, technology, business, and problem solving."
+                            data-fa="من دانشجوی مهندسی هستم و به تحلیل داده، فناوری، کسب‌وکار و حل مسئله علاقه‌مندم.">
                             I'm an engineering student interested in data analysis,
                             technology, business, and problem solving.
                         </p>
 
-                        <p>
+
+                        <p
+                            data-en="Throughout my studies and personal projects, I've worked on different problems involving data, engineering, research, business analysis and digital products."
+                            data-fa="در طول تحصیل و پروژه‌های شخصی، روی مسائل مختلفی در زمینه داده، مهندسی، تحقیق، تحلیل کسب‌وکار و محصولات دیجیتال کار کرده‌ام.">
                             Throughout my studies and personal projects, I've worked
                             on different problems involving data, engineering,
                             research, business analysis and digital products.
                         </p>
 
-                        <p>
+
+                        <p
+                            data-en="This portfolio is a collection of the projects and experiences I've built along the way."
+                            data-fa="این پورتفولیو مجموعه‌ای از پروژه‌ها و تجربیاتی است که در این مسیر به دست آورده‌ام.">
                             This portfolio is a collection of the projects and
                             experiences I've built along the way.
                         </p>
 
                     </div>
 
+
+
                     <div class="about-box">
 
-                        <div class="about-item">
-                            <span class="about-number">01</span>
-                            <div>
-                                <h3>Problem Solving</h3>
-                                <p>Breaking complex problems into practical solutions.</p>
-                            </div>
-                        </div>
 
                         <div class="about-item">
-                            <span class="about-number">02</span>
+
+                            <span class="about-number">
+                                01
+                            </span>
+
                             <div>
-                                <h3>Data & Analysis</h3>
-                                <p>Using data to understand problems and support decisions.</p>
+
+                                <h3
+                                    data-en="Problem Solving"
+                                    data-fa="حل مسئله">
+                                    Problem Solving
+                                </h3>
+
+                                <p
+                                    data-en="Breaking complex problems into practical solutions."
+                                    data-fa="تبدیل مسائل پیچیده به راهکارهای عملی.">
+                                    Breaking complex problems into practical solutions.
+                                </p>
+
                             </div>
+
                         </div>
 
+
+
                         <div class="about-item">
-                            <span class="about-number">03</span>
+
+                            <span class="about-number">
+                                02
+                            </span>
+
                             <div>
-                                <h3>Continuous Learning</h3>
-                                <p>Always learning new tools, technologies and methods.</p>
+
+                                <h3
+                                    data-en="Data & Analysis"
+                                    data-fa="داده و تحلیل">
+                                    Data & Analysis
+                                </h3>
+
+                                <p
+                                    data-en="Using data to understand problems and support decisions."
+                                    data-fa="استفاده از داده برای درک مسائل و پشتیبانی از تصمیم‌گیری.">
+                                    Using data to understand problems and support decisions.
+                                </p>
+
                             </div>
+
                         </div>
+
+
+
+                        <div class="about-item">
+
+                            <span class="about-number">
+                                03
+                            </span>
+
+                            <div>
+
+                                <h3
+                                    data-en="Continuous Learning"
+                                    data-fa="یادگیری مستمر">
+                                    Continuous Learning
+                                </h3>
+
+                                <p
+                                    data-en="Always learning new tools, technologies and methods."
+                                    data-fa="یادگیری مداوم ابزارها، فناوری‌ها و روش‌های جدید.">
+                                    Always learning new tools, technologies and methods.
+                                </p>
+
+                            </div>
+
+                        </div>
+
 
                     </div>
 
@@ -166,27 +295,38 @@
         </section>
 
 
+
         <!-- ================= PROJECTS ================= -->
 
         <section class="section projects-section" id="projects">
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <p class="section-label">
+                    <p class="section-label"
+                        data-en="PROJECTS"
+                        data-fa="پروژه‌ها">
                         PROJECTS
                     </p>
 
-                    <h2>
+
+                    <h2
+                        data-en="Selected Projects"
+                        data-fa="پروژه‌های منتخب">
                         Selected Projects
                     </h2>
 
-                    <p>
+
+                    <p
+                        data-en="A selection of projects I've worked on."
+                        data-fa="منتخبی از پروژه‌هایی که روی آن‌ها کار کرده‌ام.">
                         A selection of projects I've worked on.
                     </p>
 
                 </div>
+
 
 
                 <div class="projects-grid">
@@ -200,21 +340,31 @@
                             01
                         </div>
 
+
                         <div class="project-content">
 
-                            <p class="project-category">
+                            <p class="project-category"
+                                data-en="DATA / UX RESEARCH"
+                                data-fa="داده / تحقیق UX">
                                 DATA / UX RESEARCH
                             </p>
 
-                            <h3>
+
+                            <h3
+                                data-en="UI/UX Research & User Survey"
+                                data-fa="تحقیق UI/UX و نظرسنجی کاربران">
                                 UI/UX Research & User Survey
                             </h3>
 
-                            <p>
+
+                            <p
+                                data-en="A research project analyzing user preferences across different interface elements using survey data and structured analysis."
+                                data-fa="پروژه‌ای پژوهشی برای تحلیل ترجیحات کاربران در عناصر مختلف رابط کاربری با استفاده از داده‌های نظرسنجی و تحلیل ساختاریافته.">
                                 A research project analyzing user preferences
                                 across different interface elements using survey
                                 data and structured analysis.
                             </p>
+
 
                             <div class="project-tags">
 
@@ -225,14 +375,22 @@
 
                             </div>
 
-                            <a href="https://github.com/Hossein-4A/Business-Intelligence.git"
-                                class="project-link">
+
+                            <!-- Replace # with your GitHub repository -->
+
+                            <a href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                data-en="View Project →"
+                                data-fa="مشاهده پروژه ←">
                                 View Project →
                             </a>
 
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 2 -->
@@ -243,21 +401,31 @@
                             02
                         </div>
 
+
                         <div class="project-content">
 
-                            <p class="project-category">
+                            <p class="project-category"
+                                data-en="BUSINESS / AI"
+                                data-fa="کسب‌وکار / هوش مصنوعی">
                                 BUSINESS / AI
                             </p>
 
-                            <h3>
+
+                            <h3
+                                data-en="Sports AI Platform"
+                                data-fa="پلتفرم هوش مصنوعی ورزشی">
                                 Sports AI Platform
                             </h3>
 
-                            <p>
+
+                            <p
+                                data-en="A business and product concept for an AI-powered sports analytics platform focused on collecting, analyzing and presenting sports data."
+                                data-fa="ایده‌ای برای یک پلتفرم تحلیل ورزشی مبتنی بر هوش مصنوعی با تمرکز بر جمع‌آوری، تحلیل و ارائه داده‌های ورزشی.">
                                 A business and product concept for an AI-powered
                                 sports analytics platform focused on collecting,
                                 analyzing and presenting sports data.
                             </p>
+
 
                             <div class="project-tags">
 
@@ -268,13 +436,20 @@
 
                             </div>
 
-                            <a href="#" class="project-link">
+
+                            <a href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                data-en="View Project →"
+                                data-fa="مشاهده پروژه ←">
                                 View Project →
                             </a>
 
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 3 -->
@@ -285,21 +460,31 @@
                             03
                         </div>
 
+
                         <div class="project-content">
 
-                            <p class="project-category">
+                            <p class="project-category"
+                                data-en="DATA / HEALTH"
+                                data-fa="داده / سلامت">
                                 DATA / HEALTH
                             </p>
 
-                            <h3>
+
+                            <h3
+                                data-en="Data Marketplace"
+                                data-fa="بازار داده">
                                 Data Marketplace
                             </h3>
 
-                            <p>
+
+                            <p
+                                data-en="A concept focused on organizing, providing and analyzing datasets through APIs, dashboards and structured data services."
+                                data-fa="ایده‌ای با تمرکز بر سازمان‌دهی، ارائه و تحلیل مجموعه‌داده‌ها از طریق API، داشبورد و خدمات ساختاریافته داده.">
                                 A concept focused on organizing, providing and
                                 analyzing datasets through APIs, dashboards and
                                 structured data services.
                             </p>
+
 
                             <div class="project-tags">
 
@@ -310,13 +495,20 @@
 
                             </div>
 
-                            <a href="#" class="project-link">
+
+                            <a href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                data-en="View Project →"
+                                data-fa="مشاهده پروژه ←">
                                 View Project →
                             </a>
 
                         </div>
 
                     </article>
+
 
 
                     <!-- PROJECT 4 -->
@@ -327,21 +519,31 @@
                             04
                         </div>
 
+
                         <div class="project-content">
 
-                            <p class="project-category">
+                            <p class="project-category"
+                                data-en="ENGINEERING"
+                                data-fa="مهندسی">
                                 ENGINEERING
                             </p>
 
-                            <h3>
+
+                            <h3
+                                data-en="Football Stadium Project"
+                                data-fa="پروژه طراحی ورزشگاه فوتبال">
                                 Football Stadium Project
                             </h3>
 
-                            <p>
+
+                            <p
+                                data-en="A large-scale project planning concept involving project charter, budget estimation, work breakdown structure and project planning."
+                                data-fa="پروژه‌ای در زمینه برنامه‌ریزی یک پروژه بزرگ شامل منشور پروژه، برآورد بودجه، ساختار شکست کار و برنامه‌ریزی پروژه.">
                                 A large-scale project planning concept involving
                                 project charter, budget estimation, work breakdown
                                 structure and project planning.
                             </p>
+
 
                             <div class="project-tags">
 
@@ -352,7 +554,13 @@
 
                             </div>
 
-                            <a href="#" class="project-link">
+
+                            <a href="#"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                                data-en="View Project →"
+                                data-fa="مشاهده پروژه ←">
                                 View Project →
                             </a>
 
@@ -368,23 +576,31 @@
         </section>
 
 
+
         <!-- ================= SKILLS ================= -->
 
         <section class="section" id="skills">
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <p class="section-label">
+                    <p class="section-label"
+                        data-en="SKILLS"
+                        data-fa="مهارت‌ها">
                         SKILLS
                     </p>
 
-                    <h2>
+
+                    <h2
+                        data-en="Tools & Areas"
+                        data-fa="مهارت‌ها و حوزه‌ها">
                         Tools & Areas
                     </h2>
 
                 </div>
+
 
 
                 <div class="skills-grid">
@@ -396,19 +612,24 @@
                             01
                         </div>
 
-                        <h3>
+                        <h3
+                            data-en="Data & Analytics"
+                            data-fa="داده و تحلیل">
                             Data & Analytics
                         </h3>
 
                         <div class="skill-list">
+
                             <span>Python</span>
                             <span>SQL</span>
                             <span>Excel</span>
                             <span>Minitab</span>
                             <span>Data Analysis</span>
+
                         </div>
 
                     </div>
+
 
 
                     <div class="skill-card">
@@ -417,18 +638,23 @@
                             02
                         </div>
 
-                        <h3>
+                        <h3
+                            data-en="Engineering"
+                            data-fa="مهندسی">
                             Engineering
                         </h3>
 
                         <div class="skill-list">
+
                             <span>Lean</span>
                             <span>Operations Research</span>
                             <span>Project Management</span>
                             <span>Process Analysis</span>
+
                         </div>
 
                     </div>
+
 
 
                     <div class="skill-card">
@@ -437,18 +663,23 @@
                             03
                         </div>
 
-                        <h3>
+                        <h3
+                            data-en="Business"
+                            data-fa="کسب‌وکار">
                             Business
                         </h3>
 
                         <div class="skill-list">
+
                             <span>Business Analysis</span>
                             <span>Financial Analysis</span>
                             <span>Business Modeling</span>
                             <span>Market Analysis</span>
+
                         </div>
 
                     </div>
+
 
 
                     <div class="skill-card">
@@ -457,16 +688,20 @@
                             04
                         </div>
 
-                        <h3>
+                        <h3
+                            data-en="Technology"
+                            data-fa="فناوری">
                             Technology
                         </h3>
 
                         <div class="skill-list">
+
                             <span>Git</span>
                             <span>GitHub</span>
                             <span>HTML</span>
                             <span>CSS</span>
                             <span>Programming</span>
+
                         </div>
 
                     </div>
@@ -479,42 +714,62 @@
         </section>
 
 
+
         <!-- ================= EDUCATION ================= -->
 
         <section class="section education-section" id="education">
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <p class="section-label">
+                    <p class="section-label"
+                        data-en="EDUCATION"
+                        data-fa="تحصیلات">
                         EDUCATION
                     </p>
 
-                    <h2>
+
+                    <h2
+                        data-en="My Academic Background"
+                        data-fa="سوابق تحصیلی">
                         My Academic Background
                     </h2>
 
                 </div>
 
 
+
                 <div class="education-card">
 
-                    <div class="education-date">
+
+                    <div class="education-date"
+                        data-en="EDUCATION"
+                        data-fa="تحصیلات">
                         EDUCATION
                     </div>
 
+
                     <div>
 
-                        <h3>
+                        <h3
+                            data-en="Engineering Student"
+                            data-fa="دانشجوی مهندسی">
                             Engineering Student
                         </h3>
 
-                        <p class="education-place">
+
+                        <p class="education-place"
+                            data-en="University"
+                            data-fa="دانشگاه">
                             University
                         </p>
 
-                        <p>
+
+                        <p
+                            data-en="Currently studying engineering with an interest in data, technology, optimization and problem solving."
+                            data-fa="در حال تحصیل در رشته مهندسی با علاقه به داده، فناوری، بهینه‌سازی و حل مسئله.">
                             Currently studying engineering with an interest in
                             data, technology, optimization and problem solving.
                         </p>
@@ -528,30 +783,45 @@
         </section>
 
 
+
         <!-- ================= RESUME ================= -->
 
         <section class="resume-section">
 
             <div class="container resume-content">
 
+
                 <div>
 
-                    <p class="section-label">
+                    <p class="section-label"
+                        data-en="RESUME"
+                        data-fa="رزومه">
                         RESUME
                     </p>
 
-                    <h2>
+
+                    <h2
+                        data-en="Want to know more?"
+                        data-fa="می‌خواهید بیشتر بدانید؟">
                         Want to know more?
                     </h2>
 
-                    <p>
+
+                    <p
+                        data-en="Download my resume to learn more about my education, skills and experience."
+                        data-fa="برای آشنایی بیشتر با تحصیلات، مهارت‌ها و تجربیات من، رزومه‌ام را دریافت کنید.">
                         Download my resume to learn more about my education,
                         skills and experience.
                     </p>
 
                 </div>
 
-                <a href="assets/resume/CV.pdf" class="primary-button" download>
+
+                <a href="assets/resume/CV.pdf"
+                    class="primary-button"
+                    download
+                    data-en="Download CV"
+                    data-fa="دریافت رزومه">
                     Download CV
                 </a>
 
@@ -560,23 +830,33 @@
         </section>
 
 
+
         <!-- ================= CONTACT ================= -->
 
         <section class="section contact-section" id="contact">
 
             <div class="container">
 
+
                 <div class="section-heading">
 
-                    <p class="section-label">
+                    <p class="section-label"
+                        data-en="CONTACT"
+                        data-fa="تماس">
                         CONTACT
                     </p>
 
-                    <h2>
+
+                    <h2
+                        data-en="Let's connect."
+                        data-fa="بیایید در ارتباط باشیم.">
                         Let's connect.
                     </h2>
 
-                    <p>
+
+                    <p
+                        data-en="I'm always interested in discussing projects, opportunities and interesting ideas."
+                        data-fa="همیشه از گفتگو درباره پروژه‌ها، فرصت‌های کاری و ایده‌های جالب استقبال می‌کنم.">
                         I'm always interested in discussing projects,
                         opportunities and interesting ideas.
                     </p>
@@ -584,9 +864,14 @@
                 </div>
 
 
+
                 <div class="contact-links">
 
-                    <a href="https://github.com/hossein-4a" target="_blank" class="contact-card">
+
+                    <a href="https://github.com/hossein-4a"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
 
                         <span class="contact-label">
                             GitHub
@@ -599,7 +884,12 @@
                     </a>
 
 
-                    <a href="#" class="contact-card">
+
+                    <!-- Replace # with your LinkedIn -->
+
+                    <a href="#"
+                        target="_blank"
+                        class="contact-card">
 
                         <span class="contact-label">
                             LinkedIn
@@ -612,7 +902,11 @@
                     </a>
 
 
-                    <a href="mailto:your@email.com" class="contact-card">
+
+                    <!-- Replace your@email.com -->
+
+                    <a href="mailto:your@email.com"
+                        class="contact-card">
 
                         <span class="contact-label">
                             Email
@@ -624,6 +918,7 @@
 
                     </a>
 
+
                 </div>
 
             </div>
@@ -633,17 +928,23 @@
     </main>
 
 
+
     <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
 
         <div class="container footer-content">
 
-            <p>
+            <p
+                data-en="© 2026 Hossein. All rights reserved."
+                data-fa="© ۲۰۲۶ حسین. تمامی حقوق محفوظ است.">
                 © 2026 Hossein. All rights reserved.
             </p>
 
-            <a href="#home">
+
+            <a href="#home"
+                data-en="Back to top ↑"
+                data-fa="بازگشت به بالا ↑">
                 Back to top ↑
             </a>
 
@@ -652,5 +953,63 @@
     </footer>
 
 
+
+    <!-- ================= LANGUAGE SCRIPT ================= -->
+
+    <script>
+
+        const languageToggle = document.getElementById("languageToggle");
+        const languageText = document.getElementById("languageText");
+
+        let currentLanguage = localStorage.getItem("language") || "en";
+
+
+        function changeLanguage(language) {
+
+            currentLanguage = language;
+
+            document.documentElement.lang = language;
+
+            document.documentElement.dir =
+                language === "fa" ? "rtl" : "ltr";
+
+
+            const elements =
+                document.querySelectorAll("[data-en][data-fa]");
+
+
+            elements.forEach(element => {
+
+                element.innerHTML =
+                    element.getAttribute(`data-${language}`);
+
+            });
+
+
+            languageText.textContent =
+                language === "en" ? "FA" : "EN";
+
+
+            localStorage.setItem("language", language);
+
+        }
+
+
+        languageToggle.addEventListener("click", () => {
+
+            const newLanguage =
+                currentLanguage === "en" ? "fa" : "en";
+
+            changeLanguage(newLanguage);
+
+        });
+
+
+        changeLanguage(currentLanguage);
+
+    </script>
+
+
 </body>
+
 </html>
