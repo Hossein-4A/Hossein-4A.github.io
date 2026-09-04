@@ -12,1222 +12,482 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Vazirmatn + Inter -->
+    <!-- IBM Plex Sans / Mono + Vazirmatn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Vazirmatn:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
 </head>
-
 
 <body>
 
     <!-- ================= HEADER ================= -->
 
     <header class="header">
-
         <div class="container nav">
 
-            <a href="#home" class="logo">
-                HOSSEIN
-            </a>
-
+            <a href="#home" class="logo">HOSSEIN</a>
 
             <nav class="navigation">
-
-                <a href="#about" data-en="About" data-fa="درباره من">
-                    About
-                </a>
-
-                <a href="#projects" data-en="Projects" data-fa="پروژه‌ها">
-                    Projects
-                </a>
-
-                <a href="#skills" data-en="Skills" data-fa="مهارت‌ها">
-                    Skills
-                </a>
-
-                <a href="#education" data-en="Education" data-fa="تحصیلات">
-                    Education
-                </a>
-
-                <a href="#contact" data-en="Contact" data-fa="تماس">
-                    Contact
-                </a>
-
+                <a href="#about" data-en="About" data-fa="درباره من">About</a>
+                <a href="#projects" data-en="Projects" data-fa="پروژه‌ها">Projects</a>
+                <a href="#skills" data-en="Skills" data-fa="مهارت‌ها">Skills</a>
+                <a href="#education" data-en="Education" data-fa="تحصیلات">Education</a>
+                <a href="#contact" data-en="Contact" data-fa="تماس">Contact</a>
             </nav>
 
-
             <div class="nav-right">
-
-                <!-- Language Switch -->
-
-                <button id="languageToggle" class="language-button">
-                    <span id="languageText">FA</span>
+                <button id="languageToggle" class="language-button" aria-label="Toggle language">
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-option" data-lang="fa">FA</span>
+                    <span class="lang-thumb" aria-hidden="true"></span>
                 </button>
 
-
-                <a href="#contact" class="nav-button"
-                    data-en="Contact Me"
-                    data-fa="تماس با من">
-                    Contact Me
-                </a>
-
+                <a href="#contact" class="nav-button" data-en="Contact Me" data-fa="تماس با من">Contact Me</a>
             </div>
 
         </div>
-
     </header>
-
 
 
     <main>
 
-
         <!-- ================= HERO ================= -->
 
         <section class="hero" id="home">
+            <div class="hero-grid" aria-hidden="true"></div>
 
             <div class="container hero-content">
 
-                <div class="hero-text">
-
-                    <p class="eyebrow"
-                        data-en="INDUSTRIAL ENGINEERING STUDENT AT SHARIF UNIVERSITY OF TECHNOLOGY"
+                <div class="hero-tag">
+                    <span class="hero-tag-dot"></span>
+                    <p class="eyebrow" data-en="INDUSTRIAL ENGINEERING STUDENT AT SHARIF UNIVERSITY OF TECHNOLOGY"
                         data-fa="دانشجوی مهندسی صنایع دانشگاه صنعتی شریف">
-                        ENGINEERING STUDENT & PROBLEM SOLVER
+                        ENGINEERING STUDENT &amp; PROBLEM SOLVER
                     </p>
+                </div>
 
+                <h1 class="hero-title" data-en="Hi, I&rsquo;m <span>Hossein.</span>"
+                    data-fa="سلام من <span>حسین</span> هستم">
+                    Hi, I&rsquo;m <span>Hossein.</span>
+                </h1>
 
-                    <h1
-                        data-en="Hi, I'm <span>Hossein.</span>"
-                        data-fa="سلام من <span>حسین</span> هستم">
-                        Hi, I'm <span>Hossein.</span>
-                    </h1>
+                <p class="hero-description"
+                    data-en="I enjoy turning complex problems into practical solutions through data analysis, engineering, technology and structured thinking."
+                    data-fa="به تبدیل مسائل پیچیده به راهکارهای کاربردی از طریق تحلیل داده، مهندسی، فناوری و تفکر ساختاریافته علاقه‌مندم.">
+                    I enjoy turning complex problems into practical solutions through data analysis, engineering,
+                    technology and structured thinking.
+                </p>
 
-
-                    <h2
-                        data-en="22 years | Resident of Tehran | Life in Mashhad"
-                        data-fa="22 ساله | ساکن تهران | زندگی در مشهد">
-                        Engineering | Data | Technology
-                    </h2>
-
-
-                    <p class="hero-description"
-                        data-en="I enjoy turning complex problems into practical solutions through data analysis, engineering, technology and structured thinking."
-                        data-fa="به تبدیل مسائل پیچیده به راهکارهای کاربردی از طریق تحلیل داده، مهندسی، فناوری و تفکر ساختاریافته علاقه‌مندم.">
-                        I enjoy turning complex problems into practical solutions
-                        through data analysis, engineering, technology and structured thinking.
-                    </p>
-
-
-                    <div class="hero-buttons">
-
-                        <a href="#projects"
-                            class="primary-button"
-                            data-en="View My Projects"
-                            data-fa="مشاهده پروژه‌ها">
-                            View My Projects
-                        </a>
-
-
-                        <a href="#about"
-                            class="secondary-button"
-                            data-en="About Me"
-                            data-fa="درباره من">
-                            About Me
-                        </a>
-
+                <dl class="spec-block">
+                    <div class="spec-field">
+                        <dt data-en="Age" data-fa="سن">Age</dt>
+                        <dd class="mono" data-en="22 years" data-fa="۲۲ ساله">22 years</dd>
                     </div>
+                    <div class="spec-field">
+                        <dt data-en="Based in" data-fa="ساکن">Based in</dt>
+                        <dd class="mono" data-en="Tehran" data-fa="تهران">Tehran</dd>
+                    </div>
+                    <div class="spec-field">
+                        <dt data-en="Roots in" data-fa="زادگاه">Roots in</dt>
+                        <dd class="mono" data-en="Mashhad" data-fa="مشهد">Mashhad</dd>
+                    </div>
+                </dl>
 
+                <div class="hero-buttons">
+                    <a href="#projects" class="primary-button" data-en="View My Projects"
+                        data-fa="مشاهده پروژه‌ها">View My Projects</a>
+                    <a href="#about" class="secondary-button" data-en="About Me" data-fa="درباره من">About Me</a>
                 </div>
 
             </div>
-
         </section>
-
 
 
         <!-- ================= ABOUT ================= -->
 
         <section class="section" id="about">
-
             <div class="container">
 
                 <div class="section-heading">
-
-                    <p class="section-label"
-                        data-en="ABOUT"
-                        data-fa="درباره من">
-                        ABOUT
-                    </p>
-
-
-                    <h2
-                        data-en="A little about me"
-                        data-fa="کمی درباره من">
-                        A little about me
-                    </h2>
-
+                    <p class="section-label" data-en="About" data-fa="درباره من">About</p>
+                    <h2 data-en="A little about me" data-fa="کمی درباره من">A little about me</h2>
                 </div>
-
 
                 <div class="about-content">
 
-
                     <div class="about-text">
-
                         <p
                             data-en="Industrial Engineering student with an analytical and problem-oriented approach, interested in the areas of data analysis, optimization, project management and process improvement. Experience in conducting analytical and research projects using tools such as Python, Excel and Power BI and interested in using data and technology to solve real business problems. A learner, curious and persistent individual who is interested in continuously developing technical and professional skills and converting academic learning into practical experience."
                             data-fa="دانشجوی مهندسی صنایع با رویکردی تحلیلی و مسئله‌محور، علاقه‌مند به حوزه‌های تحلیل داده، بهینه‌سازی، مدیریت پروژه و بهبود فرآیندها. تجربه انجام پروژه‌های تحلیلی و تحقیقاتی با استفاده از ابزارهایی مانند Python، Excel و Power BI و علاقه‌مند به استفاده از داده و فناوری برای حل مسائل واقعی کسب‌وکار. فردی یادگیرنده، کنجکاو و پیگیر که به توسعه مستمر مهارت‌های فنی و حرفه‌ای و تبدیل آموخته‌های دانشگاهی به تجربه عملی علاقه دارد.">
-                            I'm an engineering student interested in data analysis,
-                            technology, business, and problem solving.
+                            I&rsquo;m an engineering student interested in data analysis, technology, business, and
+                            problem solving.
                         </p>
-
 
                         <p
                             data-en="During my studies and university projects, I have worked on various issues in the fields of data, engineering, research, business analytics, and digital products. This portfolio is a collection of projects and experiences I have gained along the way."
                             data-fa="در طول تحصیل و پروژه‌های دانشگاهی، روی مسائل مختلفی در زمینه داده، مهندسی، تحقیق، تحلیل کسب‌وکار و محصولات دیجیتال کار کرده‌ام. این پورتفولیو مجموعه‌ای از پروژه‌ها و تجربیاتی است که در این مسیر به دست آورده‌ام.">
-                            Throughout my studies and personal projects, I've worked
-                            on different problems involving data, engineering,
-                            research, business analysis and digital products.
+                            Throughout my studies and personal projects, I&rsquo;ve worked on different problems
+                            involving data, engineering, research, business analysis and digital products.
                         </p>
-
-
                     </div>
-
-
 
                     <div class="about-box">
 
-
                         <div class="about-item">
-
-                            <span class="about-number">
-                                01
-                            </span>
-
+                            <span class="about-number mono">01</span>
                             <div>
-
-                                <h3
-                                    data-en="Problem Solving"
-                                    data-fa="حل مسئله">
-                                    Problem Solving
-                                </h3>
-
-                                <p
-                                    data-en="Breaking complex problems into practical solutions."
-                                    data-fa="تبدیل مسائل پیچیده به راهکارهای عملی.">
-                                    Breaking complex problems into practical solutions.
-                                </p>
-
+                                <h3 data-en="Problem Solving" data-fa="حل مسئله">Problem Solving</h3>
+                                <p data-en="Breaking complex problems into practical solutions."
+                                    data-fa="تبدیل مسائل پیچیده به راهکارهای عملی.">Breaking complex problems into
+                                    practical solutions.</p>
                             </div>
-
                         </div>
 
-
-
                         <div class="about-item">
-
-                            <span class="about-number">
-                                02
-                            </span>
-
+                            <span class="about-number mono">02</span>
                             <div>
-
-                                <h3
-                                    data-en="Data & Analysis"
-                                    data-fa="داده و تحلیل">
-                                    Data & Analysis
-                                </h3>
-
-                                <p
-                                    data-en="Using data to understand problems and support decisions."
-                                    data-fa="استفاده از داده برای درک مسائل و پشتیبانی از تصمیم‌گیری.">
-                                    Using data to understand problems and support decisions.
-                                </p>
-
+                                <h3 data-en="Data &amp; Analysis" data-fa="داده و تحلیل">Data &amp; Analysis</h3>
+                                <p data-en="Using data to understand problems and support decisions."
+                                    data-fa="استفاده از داده برای درک مسائل و پشتیبانی از تصمیم‌گیری.">Using data to
+                                    understand problems and support decisions.</p>
                             </div>
-
                         </div>
 
-
-
                         <div class="about-item">
-
-                            <span class="about-number">
-                                03
-                            </span>
-
+                            <span class="about-number mono">03</span>
                             <div>
-
-                                <h3
-                                    data-en="Continuous Learning"
-                                    data-fa="یادگیری مستمر">
-                                    Continuous Learning
-                                </h3>
-
-                                <p
-                                    data-en="Always learning new tools, technologies and methods."
-                                    data-fa="یادگیری مداوم ابزارها، فناوری‌ها و روش‌های جدید.">
-                                    Always learning new tools, technologies and methods.
-                                </p>
-
+                                <h3 data-en="Continuous Learning" data-fa="یادگیری مستمر">Continuous Learning</h3>
+                                <p data-en="Always learning new tools, technologies and methods."
+                                    data-fa="یادگیری مداوم ابزارها، فناوری‌ها و روش‌های جدید.">Always learning new
+                                    tools, technologies and methods.</p>
                             </div>
-
                         </div>
-
 
                     </div>
 
                 </div>
-
             </div>
-
         </section>
-
 
 
         <!-- ================= PROJECTS ================= -->
 
         <section class="section projects-section" id="projects">
-
             <div class="container">
 
-
                 <div class="section-heading">
-
-                    <p class="section-label"
-                        data-en="PROJECTS"
-                        data-fa="پروژه‌ها">
-                        PROJECTS
-                    </p>
-
-
-                    <h2
-                        data-en="Selected Projects"
-                        data-fa="پروژه‌های منتخب">
-                        Selected Projects
-                    </h2>
-
-
-                    <p
-                        data-en="A selection of projects I've worked on."
-                        data-fa="منتخبی از پروژه‌هایی که روی آن‌ها کار کرده‌ام.">
-                        A selection of projects I've worked on.
-                    </p>
-
+                    <p class="section-label" data-en="Projects" data-fa="پروژه‌ها">Projects</p>
+                    <h2 data-en="Selected Projects" data-fa="پروژه‌های منتخب">Selected Projects</h2>
+                    <p data-en="A selection of projects I&rsquo;ve worked on."
+                        data-fa="منتخبی از پروژه‌هایی که روی آن‌ها کار کرده‌ام.">A selection of projects I&rsquo;ve
+                        worked on.</p>
                 </div>
 
+                <div class="records">
 
-
-                <div class="projects-grid">
-
-
-                    <!-- PROJECT 1 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            1
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="Business Intellegence"
-                                data-fa="هوش تجاری">
-                                Business Intellegence
-                            </p>
-
-
-                            <h3
-                                data-en="Data analysis of rail passenger companies"
-                                data-fa="تحلیل داده های شرکت های مسافربری ریلی">
-                                Data analysis of rail passenger companies
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 1 -->
+                    <article class="record">
+                        <div class="record-id mono">01</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Business Intelligence" data-fa="هوش تجاری">Business
+                                Intelligence</p>
+                            <h3 data-en="Data analysis of rail passenger companies"
+                                data-fa="تحلیل داده های شرکت های مسافربری ریلی">Data analysis of rail passenger
+                                companies</h3>
+                            <p class="record-desc"
                                 data-en="Generating random data with different statistical distributions, organizing and analyzing them, and then displaying them in management dashboards."
                                 data-fa="تولید داده‌های تصادفی با توزیع‌های مختلف آماری و سازمان‌دهی و تحلیل آنها و سپس نمایش آن در داشبوردهای مدیریتی">
-                                Generating random data with different statistical distributions,
-                                organizing and analyzing them, 
-                                and then displaying them in management dashboards
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Excel</span>
-                                <span>Statistical data</span>
-                                <span>Power BI</span>
-                                <span>Data analysis</span>
-
+                                Generating random data with different statistical distributions, organizing and
+                                analyzing them, and then displaying them in management dashboards.</p>
+                            <div class="record-tags">
+                                <span>Excel</span><span>Statistical data</span><span>Power BI</span><span>Data
+                                    analysis</span>
                             </div>
-
-
-                            <!-- Replace # with your GitHub repository -->
-
-                            <a href="https://github.com/Hossein-4A/Business-Intelligence.git"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="https://github.com/Hossein-4A/Business-Intelligence.git" target="_blank"
+                                rel="noopener noreferrer" class="record-link" data-en="View project"
+                                data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
-
-
-                    <!-- PROJECT 2 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            2
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="Internship"
-                                data-fa="کارآموزی">
-                                 Internship
-                            </p>
-
-
-                            <h3
-                                data-en="Analysis of the global solar panel market and investment opportunities in Iran"
-                                data-fa="تحلیل بازار جهانی پنل‌های خورشیدی و فرصت‌های سرمایه‌گذاری در ایران ">
-                                Analysis of the global solar panel market and investment opportunities in Iran
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 2 -->
+                    <article class="record">
+                        <div class="record-id mono">02</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Internship" data-fa="کارآموزی">Internship</p>
+                            <h3 data-en="Analysis of the global solar panel market and investment opportunities in Iran"
+                                data-fa="تحلیل بازار جهانی پنل‌های خورشیدی و فرصت‌های سرمایه‌گذاری در ایران">Analysis
+                                of the global solar panel market and investment opportunities in Iran</h3>
+                            <p class="record-desc"
                                 data-en="My main responsibilities included economic modeling, project sensitivity analysis, identification of internal supply chain bottlenecks, and strategic review of new photovoltaic technologies.."
                                 data-fa="مسئولیت اصلی من شامل مدل‌سازی اقتصادی، تحلیل حساسیت پروژه‌ها شناسایی گلوگاه‌های زنجیره تأمین داخلی، و بررسی استراتژیک فناوری‌های نوین فتوولتائیک بود. .">
-                                A business and product concept for an AI-powered
-                                sports analytics platform focused on collecting,
-                                analyzing and presenting sports data.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Solar energy</span>
-                                <span>Research</span>
-                                <span>Feasibility study</span>
-                                <span>Sensitivity analysis</span>
-
+                                My main responsibilities included economic modeling, project sensitivity analysis,
+                                identification of internal supply chain bottlenecks, and strategic review of new
+                                photovoltaic technologies.</p>
+                            <div class="record-tags">
+                                <span>Solar energy</span><span>Research</span><span>Feasibility
+                                    study</span><span>Sensitivity analysis</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
-
-
-                    <!-- PROJECT 3 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            3
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="INFORMATION SYSTEM MANAGEMENT"
-                                data-fa="مدیریت سیستم‌های اطلاعاتی">
-                                Information Systems Management
-                            </p>
-
-
-                            <h3
-                                data-en="Designing a hospital maintenance and repair planning information system"
-                                data-fa="طراحی سیستم اطلاعاتی برنامه‌ریزی تعمیرات و نگه‌داری  بیمارستان">
-                                Data Marketplace
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 3 -->
+                    <article class="record">
+                        <div class="record-id mono">03</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Information Systems Management"
+                                data-fa="مدیریت سیستم‌های اطلاعاتی">Information Systems Management</p>
+                            <h3 data-en="Designing a hospital maintenance and repair planning information system"
+                                data-fa="طراحی سیستم اطلاعاتی برنامه‌ریزی تعمیرات و نگه‌داری بیمارستان">Designing a
+                                hospital maintenance and repair planning information system</h3>
+                            <p class="record-desc"
                                 data-en="After collecting information about the maintenance planning information system of various hospitals, 4 UML diagrams were designed for each of the 3 relevant processes, and then a prototype of these processes was designed using Figma."
                                 data-fa="پس از جمع‌آوری اطلاعات درباره سیستم اطلاعاتی برنامه‌ریزی تعمیرات و نگه‌داری بیمارستان‌های مختلف، 4 نمودار UML برای هرکدام 3 فرآیند مربوط توسط طراحی شد و بعد پروتوتایپی از این فرآیندها با استفاده از فیگما طراحی گردید.">
-                                A concept focused on organizing, providing and
-                                analyzing datasets through APIs, dashboards and
-                                structured data services.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Figma</span>
-                                <span>Visual Paradigm</span>
-                                <span>Information Systems</span>
-                                <span>Design</span>
-
+                                After collecting information about the maintenance planning information system of
+                                various hospitals, 4 UML diagrams were designed for each of the 3 relevant processes,
+                                and then a prototype of these processes was designed using Figma.</p>
+                            <div class="record-tags">
+                                <span>Figma</span><span>Visual Paradigm</span><span>Information
+                                    Systems</span><span>Design</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
-
-
-                    <!-- PROJECT 4 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            4
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="PROJECT CONTROL"
-                                data-fa="کنترل پروژه">
-                                PROJECT CONTROL
-                            </p>
-
-
-                            <h3
-                                data-en="Football stadium construction simulation"
-                                data-fa=" شبیه‌سازی ساخت ورزشگاه فوتبال">
-                                Football stadium construction simulation
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 4 -->
+                    <article class="record">
+                        <div class="record-id mono">04</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Project Control" data-fa="کنترل پروژه">Project
+                                Control</p>
+                            <h3 data-en="Football stadium construction simulation"
+                                data-fa="شبیه‌سازی ساخت ورزشگاه فوتبال">Football stadium construction simulation</h3>
+                            <p class="record-desc"
                                 data-en="In the project control lesson, we conducted a small simulation of the construction of a football stadium, and the construction process was implemented in MSP software with specific resources and a specific time frame."
                                 data-fa="در پروژه درس کنترل پروژه شبیه‌سازی کوچکی از ساخت یک ورزشگاه فوتبال انجام دادیم و با منابع مشخص در بازه زمانی مشخص روند ساخت در نرم‌افزار msp پیاده شد.">
-                                A large-scale project planning concept involving
-                                project charter, budget estimation, work breakdown
-                                structure and project planning.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>MSP</span>
-                                <span>Simulation</span>
-                                <span>Reporting</span>
-                                <span>Resource allocation</span>
-
+                                In the project control lesson, we conducted a small simulation of the construction of
+                                a football stadium, and the construction process was implemented in MSP software with
+                                specific resources and a specific time frame.</p>
+                            <div class="record-tags">
+                                <span>MSP</span><span>Simulation</span><span>Reporting</span><span>Resource
+                                    allocation</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
-                    
-                    <!-- PROJECT 5 -->
 
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            5
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="MARKETING"
-                                data-fa="اصول بازاریابی">
-                                MARKETING
-                            </p>
-
-
-                            <h3
-                                data-en="Top Influencer"
-                                data-fa="اینفلوئنسر برتر">
-                                Top Influencer
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 5 -->
+                    <article class="record">
+                        <div class="record-id mono">05</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Marketing" data-fa="اصول بازاریابی">Marketing</p>
+                            <h3 data-en="Top Influencer" data-fa="اینفلوئنسر برتر">Top Influencer</h3>
+                            <p class="record-desc"
                                 data-en="In the Marketing Principles Lesson project, we wanted to study user behavior by collecting about 500 data from 500 users through various methods, including various questions about influencers and virtual networks, and based on this, select an influencer who most closely matches our goals to promote our brand."
                                 data-fa="در پروژه درس اصول بازاریابی با جمع‌آوری حدود 500 داده از 500 کاربر از طریق طرق مختلف که شامل سوال‌های مختلفی درباره اینفلوئنسرها و شبکه‌های مجازی بود خواستیم رفتار کاربر را مطالعه کنیم و بر این اساس یک اینفلوئنسر که بیشترین تطابق را با اهداف ما دارد برای تبلیغ برندمان انتخاب کنیم.">
-                                A large-scale project planning concept involving
-                                project charter, budget estimation, work breakdown
-                                structure and project planning.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Customer behavior</span>
-                                <span>Data collection</span>
-                                <span>Excel</span>
-                                <span>Survey</span>
-
+                                In the Marketing Principles Lesson project, we wanted to study user behavior by
+                                collecting about 500 data from 500 users through various methods, including various
+                                questions about influencers and virtual networks, and based on this, select an
+                                influencer who most closely matches our goals to promote our brand.</p>
+                            <div class="record-tags">
+                                <span>Customer behavior</span><span>Data collection</span><span>Excel</span><span>Survey</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
-                    <!-- PROJECT 6 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            6
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="INDUSTRIAL DRAWING"
-                                data-fa="نقشه‌کشی صنایع">
-                                INDUSTRIAL DRAWING
-                            </p>
-
-
-                            <h3
-                                data-en="3D Design"
-                                data-fa="طراحی سه‌بعدی">
-                                3D Design
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 6 -->
+                    <article class="record">
+                        <div class="record-id mono">06</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Industrial Drawing" data-fa="نقشه‌کشی صنایع">Industrial
+                                Drawing</p>
+                            <h3 data-en="3D Design" data-fa="طراحی سه‌بعدی">3D Design</h3>
+                            <p class="record-desc"
                                 data-en="I designed a laptop for my class project and a piano table for my final exam using SolidWorks software."
                                 data-fa="در پروژه درس یک لپ‌تاپ و در امتحان نهایی یک میز پیانو به کمک نرم‌افزار Solidwork طراحی کردم">
-                                A large-scale project planning concept involving
-                                project charter, budget estimation, work breakdown
-                                structure and project planning.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Solidwork</span>
-                                <span>3D visualization</span>
-                                <span>Industrial design</span>
-
+                                I designed a laptop for my class project and a piano table for my final exam using
+                                SolidWorks software.</p>
+                            <div class="record-tags">
+                                <span>Solidwork</span><span>3D visualization</span><span>Industrial design</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
-                    <!-- PROJECT 7 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            7
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="BUSINESS INTELLEGENCE"
-                                data-fa="اهوش تجاری">
-                                BUSINESS INTELLEGENCE
-                            </p>
-
-
-                            <h3
-                                data-en="Remote monitoring of patients"
-                                data-fa="پایش از راه دور بیماران">
-                                Remote monitoring of patients
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 7 -->
+                    <article class="record">
+                        <div class="record-id mono">07</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Business Intelligence" data-fa="اهوش تجاری">Business
+                                Intelligence</p>
+                            <h3 data-en="Remote monitoring of patients" data-fa="پایش از راه دور بیماران">Remote
+                                monitoring of patients</h3>
+                            <p class="record-desc"
                                 data-en="In this project, aimed at improving healthcare processes, I analyzed vital and random data of 100 patients with different statistical distributions over a 30-day period, collected by different methods. By organizing the data in Excel and designing a comprehensive solution in Power BI, 6 analytical dashboards were designed for real-time monitoring of indicators such as heart rate, blood pressure, blood sugar, and physical activity. These management dashboards allow doctors to not only view the current status of the patient, but also to perform preventive interventions in a timely manner by identifying abnormal patterns and deviations from the normal range."
                                 data-fa="در این پروژه هدف بهبود فرآیندهای مراقبت سلامت، داده‌های حیاتی و تصادفی ۱۰۰ بیمار با توزیع‌های آماری مختلف در یک بازه ۳۰ روزه که توسط روش‌های مختلف جمع‌آوری شده بود را  تحلیل کردم. از طریق سازمان‌دهی داده‌ها در Excel و طراحی یک راهکار جامع در Power BI، ۶ داشبورد تحلیلی برای پایش لحظه‌ای شاخص‌هایی نظیر ضربان قلب، فشار خون، قند خون و فعالیت بدنی طراحی شد. این داشبوردهای مدیریتی به پزشکان اجازه می‌دهد نه تنها وضعیت فعلی بیمار را مشاهده کنند، بلکه با شناسایی الگوهای غیرعادی و خروج از محدوده نرمال، مداخلات پیشگیرانه را به موقع انجام دهند.">
-                                A large-scale project planning concept involving
-                                project charter, budget estimation, work breakdown
-                                structure and project planning.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Excel</span>
-                                <span>Powe BI</span>
-                                <span>Data analysis</span>
-                                <span>Management dashboards</span>
-
+                                In this project, aimed at improving healthcare processes, I analyzed vital and random
+                                data of 100 patients with different statistical distributions over a 30-day period,
+                                collected by different methods. By organizing the data in Excel and designing a
+                                comprehensive solution in Power BI, 6 analytical dashboards were designed for
+                                real-time monitoring of indicators such as heart rate, blood pressure, blood sugar,
+                                and physical activity.</p>
+                            <div class="record-tags">
+                                <span>Excel</span><span>Power BI</span><span>Data analysis</span><span>Management
+                                    dashboards</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
-                    <!-- PROJECT 8 -->
-
-                    <article class="project-card">
-
-                        <div class="project-number">
-                            8
-                        </div>
-
-
-                        <div class="project-content">
-
-                            <p class="project-category"
-                                data-en="INFORMATION TECHNOLOGY"
-                                data-fa="فناوری اطلاعات">
-                                INFORMATION TECHNOLOGY
-                            </p>
-
-
-                            <h3
-                                data-en="Website design"
-                                data-fa="طراحی سایت">
-                                Website design
-                            </h3>
-
-
-                            <p
+                    <!-- RECORD 8 -->
+                    <article class="record">
+                        <div class="record-id mono">08</div>
+                        <div class="record-body">
+                            <p class="record-category" data-en="Information Technology" data-fa="فناوری اطلاعات">
+                                Information Technology</p>
+                            <h3 data-en="Website design" data-fa="طراحی سایت">Website design</h3>
+                            <p class="record-desc"
                                 data-en="In the first phase, the data was structured with Access and random data was generated. In the second phase, it was displayed on PowerBI dashboards, and in the third phase, a site was designed using Wordpress that displayed these dashboards along with their descriptions."
                                 data-fa="در فاز اول ساختاربندی داده‌ها با Access شکل گرفت و داده‌های تصادفی تولید شد. در فاز دوم بر روی داشبوردهای PowerBI به نمایش درآمد و در فاز سوم به کمک Wordpress سایتی طراحی شد که این داشبوردها را به همراه توضیحات آن نشان می‌داد.">
-                                A large-scale project planning concept involving
-                                project charter, budget estimation, work breakdown
-                                structure and project planning.
-                            </p>
-
-
-                            <div class="project-tags">
-
-                                <span>Wordpress</span>
-                                <span>Power BI</span>
-                                <span>Access</span>
-                                <span>Data analysis</span>
-
+                                In the first phase, the data was structured with Access and random data was
+                                generated. In the second phase, it was displayed on PowerBI dashboards, and in the
+                                third phase, a site was designed using Wordpress that displayed these dashboards along
+                                with their descriptions.</p>
+                            <div class="record-tags">
+                                <span>Wordpress</span><span>Power BI</span><span>Access</span><span>Data
+                                    analysis</span>
                             </div>
-
-
-                            <a href="#"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-link"
-                                data-en="View Project →"
-                                data-fa="مشاهده پروژه ←">
-                                View Project →
-                            </a>
-
+                            <a href="#" target="_blank" rel="noopener noreferrer" class="record-link"
+                                data-en="View project" data-fa="مشاهده پروژه">View project</a>
                         </div>
-
                     </article>
 
                 </div>
-
             </div>
-
         </section>
-                    
-</div>
+
+
         <!-- ================= SKILLS ================= -->
 
-        <section class="section" id="skills">
-
+        <section class="section skills-section" id="skills">
             <div class="container">
 
-
                 <div class="section-heading">
-
-                    <p class="section-label"
-                        data-en="SKILLS"
-                        data-fa="مهارت‌ها">
-                        SKILLS
-                    </p>
-
-
-                    <h2
-                        data-en="Tools & Areas"
-                        data-fa="مهارت‌ها و حوزه‌ها">
-                        Tools & Areas
-                    </h2>
-
+                    <p class="section-label" data-en="Skills" data-fa="مهارت‌ها">Skills</p>
+                    <h2 data-en="Tools &amp; Areas" data-fa="مهارت‌ها و حوزه‌ها">Tools &amp; Areas</h2>
+                    <p data-en="Self-rated proficiency across the tools and methods I use most."
+                        data-fa="سطح مهارت خودارزیابی‌شده در ابزارها و روش‌هایی که بیشتر استفاده می‌کنم.">Self-rated
+                        proficiency across the tools and methods I use most.</p>
                 </div>
 
-
-
-                <div class="skills-grid">
-
-
-                    <div class="skill-card">
-
-                        <div class="skill-icon">
-                            01
-                        </div>
-
-                        <h3
-                            data-en="Data & Analytics"
-                            data-fa="داده و تحلیل">
-                            Data & Analytics
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>Excel</span>
-                            <span>Minitab</span>
-                            <span>Data Analysis</span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="skill-card">
-
-                        <div class="skill-icon">
-                            02
-                        </div>
-
-                        <h3
-                            data-en="Engineering"
-                            data-fa="مهندسی">
-                            Engineering
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span>Lean</span>
-                            <span>Operations Research</span>
-                            <span>Project Management</span>
-                            <span>Process Analysis</span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="skill-card">
-
-                        <div class="skill-icon">
-                            03
-                        </div>
-
-                        <h3
-                            data-en="Business"
-                            data-fa="کسب‌وکار">
-                            Business
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span>Business Analysis</span>
-                            <span>Financial Analysis</span>
-                            <span>Business Modeling</span>
-                            <span>Market Analysis</span>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="skill-card">
-
-                        <div class="skill-icon">
-                            04
-                        </div>
-
-                        <h3
-                            data-en="Technology"
-                            data-fa="فناوری">
-                            Technology
-                        </h3>
-
-                        <div class="skill-list">
-
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Programming</span>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
+                <div class="skills-grid" id="skillsGrid"></div>
 
             </div>
-
         </section>
-
 
 
         <!-- ================= EDUCATION ================= -->
 
         <section class="section education-section" id="education">
-
             <div class="container">
 
-
                 <div class="section-heading">
-
-                    <p class="section-label"
-                        data-en="EDUCATION"
-                        data-fa="تحصیلات">
-                        EDUCATION
-                    </p>
-
-
-                    <h2
-                        data-en="My Academic Background"
-                        data-fa="سوابق تحصیلی">
-                        My Academic Background
-                    </h2>
-
+                    <p class="section-label" data-en="Education" data-fa="تحصیلات">Education</p>
+                    <h2 data-en="My Academic Background" data-fa="سوابق تحصیلی">My Academic Background</h2>
                 </div>
 
-
-
                 <div class="education-card">
-
-
-                    <div class="education-date"
-                        data-en="EDUCATION"
-                        data-fa="تحصیلات">
-                        EDUCATION
-                    </div>
-
-
+                    <div class="education-date mono" data-en="Education" data-fa="تحصیلات">Education</div>
                     <div>
-
-                        <h3
-                            data-en="Engineering Student"
-                            data-fa="دانشجوی مهندسی">
-                            Engineering Student
-                        </h3>
-
-
-                        <p class="education-place"
-                            data-en="University"
-                            data-fa="دانشگاه">
-                            University
-                        </p>
-
-
-                        <p
-                            data-en="Currently studying engineering with an interest in data, technology, optimization and problem solving."
+                        <h3 data-en="Engineering Student" data-fa="دانشجوی مهندسی">Engineering Student</h3>
+                        <p class="education-place" data-en="University" data-fa="دانشگاه">University</p>
+                        <p data-en="Currently studying engineering with an interest in data, technology, optimization and problem solving."
                             data-fa="در حال تحصیل در رشته مهندسی با علاقه به داده، فناوری، بهینه‌سازی و حل مسئله.">
-                            Currently studying engineering with an interest in
-                            data, technology, optimization and problem solving.
-                        </p>
-
+                            Currently studying engineering with an interest in data, technology, optimization and
+                            problem solving.</p>
                     </div>
-
                 </div>
 
             </div>
-
         </section>
-
 
 
         <!-- ================= RESUME ================= -->
 
         <section class="resume-section">
-
             <div class="container resume-content">
-
-
                 <div>
-
-                    <p class="section-label"
-                        data-en="RESUME"
-                        data-fa="رزومه">
-                        RESUME
-                    </p>
-
-
-                    <h2
-                        data-en="Want to know more?"
-                        data-fa="می‌خواهید بیشتر بدانید؟">
-                        Want to know more?
-                    </h2>
-
-
-                    <p
-                        data-en="Download my resume to learn more about my education, skills and experience."
+                    <p class="section-label on-dark" data-en="Resume" data-fa="رزومه">Resume</p>
+                    <h2 data-en="Want to know more?" data-fa="می‌خواهید بیشتر بدانید؟">Want to know more?</h2>
+                    <p data-en="Download my resume to learn more about my education, skills and experience."
                         data-fa="برای آشنایی بیشتر با تحصیلات، مهارت‌ها و تجربیات من، رزومه‌ام را دریافت کنید.">
-                        Download my resume to learn more about my education,
-                        skills and experience.
-                    </p>
-
+                        Download my resume to learn more about my education, skills and experience.</p>
                 </div>
 
-
-                <a href="assets/resume/CV.pdf"
-                    class="primary-button"
-                    download
-                    data-en="Download CV"
-                    data-fa="دریافت رزومه">
-                    Download CV
-                </a>
-
+                <a href="assets/resume/CV.pdf" class="primary-button" download data-en="Download CV"
+                    data-fa="دریافت رزومه">Download CV</a>
             </div>
-
         </section>
-
 
 
         <!-- ================= CONTACT ================= -->
 
         <section class="section contact-section" id="contact">
-
             <div class="container">
 
-
                 <div class="section-heading">
-
-                    <p class="section-label"
-                        data-en="CONTACT"
-                        data-fa="تماس">
-                        CONTACT
-                    </p>
-
-
-                    <h2
-                        data-en="Let's connect."
-                        data-fa="بیایید در ارتباط باشیم.">
-                        Let's connect.
-                    </h2>
-
-
-                    <p
-                        data-en="I'm always interested in discussing projects, opportunities and interesting ideas."
-                        data-fa="همیشه از گفتگو درباره پروژه‌ها، فرصت‌های کاری و ایده‌های جالب استقبال می‌کنم.">
-                        I'm always interested in discussing projects,
-                        opportunities and interesting ideas.
-                    </p>
-
+                    <p class="section-label" data-en="Contact" data-fa="تماس">Contact</p>
+                    <h2 data-en="Let&rsquo;s connect." data-fa="بیایید در ارتباط باشیم.">Let&rsquo;s connect.</h2>
+                    <p data-en="I&rsquo;m always interested in discussing projects, opportunities and interesting ideas."
+                        data-fa="همیشه از گفتگو درباره پروژه‌ها، فرصت‌های کاری و ایده‌های جالب استقبال می‌کنم.">I&rsquo;m
+                        always interested in discussing projects, opportunities and interesting ideas.</p>
                 </div>
 
-
-
                 <div class="contact-links">
-
-
-                    <a href="https://github.com/hossein-4a"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <a href="https://github.com/hossein-4a" target="_blank" rel="noopener noreferrer"
                         class="contact-card">
-
-                        <span class="contact-label">
-                            GitHub
-                        </span>
-
-                        <span class="contact-arrow">
-                            ↗
-                        </span>
-
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-arrow" aria-hidden="true"></span>
                     </a>
 
-
-
-                    <!-- Replace # with your LinkedIn -->
-
-                    <a href="#"
-                        target="_blank"
-                        class="contact-card">
-
-                        <span class="contact-label">
-                            LinkedIn
-                        </span>
-
-                        <span class="contact-arrow">
-                            ↗
-                        </span>
-
+                    <a href="#" target="_blank" class="contact-card">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-arrow" aria-hidden="true"></span>
                     </a>
 
-
-
-                    <!-- Replace your@email.com -->
-
-                    <a href="mailto:your@email.com"
-                        class="contact-card">
-
-                        <span class="contact-label">
-                            Email
-                        </span>
-
-                        <span class="contact-arrow">
-                            ↗
-                        </span>
-
+                    <a href="mailto:your@email.com" class="contact-card">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-arrow" aria-hidden="true"></span>
                     </a>
-
-
                 </div>
 
             </div>
-
         </section>
 
     </main>
 
 
-
     <!-- ================= FOOTER ================= -->
 
     <footer class="footer">
-
         <div class="container footer-content">
-
-            <p
-                data-en="© 2026 Hossein. All rights reserved."
-                data-fa="© ۲۰۲۶ حسین. تمامی حقوق محفوظ است.">
-                © 2026 Hossein. All rights reserved.
-            </p>
-
-
-            <a href="#home"
-                data-en="Back to top ↑"
-                data-fa="بازگشت به بالا ↑">
-                Back to top ↑
-            </a>
-
+            <p data-en="© 2026 Hossein. All rights reserved." data-fa="© ۲۰۲۶ حسین. تمامی حقوق محفوظ است.">© 2026
+                Hossein. All rights reserved.</p>
+            <a href="#home" class="back-to-top" data-en="Back to top" data-fa="بازگشت به بالا">Back to top</a>
         </div>
-
     </footer>
 
-
-
-    <!-- ================= LANGUAGE SCRIPT ================= -->
-
-    <script>
-
-        const languageToggle = document.getElementById("languageToggle");
-        const languageText = document.getElementById("languageText");
-
-        let currentLanguage = localStorage.getItem("language") || "en";
-
-
-        function changeLanguage(language) {
-
-            currentLanguage = language;
-
-            document.documentElement.lang = language;
-
-            document.documentElement.dir =
-                language === "fa" ? "rtl" : "ltr";
-
-
-            const elements =
-                document.querySelectorAll("[data-en][data-fa]");
-
-
-            elements.forEach(element => {
-
-                element.innerHTML =
-                    element.getAttribute(`data-${language}`);
-
-            });
-
-
-            languageText.textContent =
-                language === "en" ? "FA" : "EN";
-
-
-            localStorage.setItem("language", language);
-
-        }
-
-
-        languageToggle.addEventListener("click", () => {
-
-            const newLanguage =
-                currentLanguage === "en" ? "fa" : "en";
-
-            changeLanguage(newLanguage);
-
-        });
-
-
-        changeLanguage(currentLanguage);
-
-    </script>
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
