@@ -6,7 +6,7 @@
 
 const LEVEL_LABELS = {
   1: { en: "Beginner", fa: "مبتدی" },
-  2: { en: "Beginner", fa: "مبتدی" },
+  2: { en: "Basic", fa: "ابتدایی" },
   3: { en: "Intermediate", fa: "متوسط" },
   4: { en: "Advanced", fa: "پیشرفته" },
   5: { en: "Expert", fa: "حرفه‌ای" },
@@ -27,7 +27,8 @@ const SKILLS = [
     category: { en: "Data Analytics & Business Intelligence", fa: "تحلیل داده‌ها و هوش تجاری" },
     items: [
       { name: "Power BI", level: 3 },
-      { name: "minitab", level: 4 },
+      { name: "minitab", level: 3 },
+      { name: "MySQL", level: 2 },
     ],
   },
   {
@@ -35,7 +36,7 @@ const SKILLS = [
     items: [
       { name: "Adobe Photoshop", level: 4 },
       { name: "Video Editing", level: 4 },
-      { name: "Business Modeling", level: 3 },
+      { name: "Adobe After Effect", level: 2 },
     ],
   },
   {
