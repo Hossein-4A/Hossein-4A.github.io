@@ -28,6 +28,7 @@ const SKILLS = [
     items: [
       { name: "Power BI", level: 3 },
       { name: "minitab", level: 4 },
+    ],
   },
   {
     category: { en: "Content Creation & Digital Media", fa: "تولید محتوا و رسانه‌های دیجیتال" },
