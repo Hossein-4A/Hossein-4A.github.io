@@ -14,41 +14,35 @@ const LEVEL_LABELS = {
 
 const SKILLS = [
   {
-    category: { en: "Data & Analytics", fa: "داده و تحلیل" },
+    category: { en: "Microsoft Office Suite", fa: "مجموعه مایکروسافت آفیس" },
     items: [
-      { name: "Excel", level: 5 },
-      { name: "Data Analysis", level: 5 },
-      { name: "Python", level: 3 },
-      { name: "SQL", level: 3 },
-      { name: "Minitab", level: 3 },
+      { name: "Excel", level: 4 },
+      { name: "Word", level: 4 },
+      { name: "Access", level: 3 },
+      { name: "MSP", level: 3 },
+      { name: "PowerPoint", level: 3 },
     ],
   },
   {
-    category: { en: "Engineering", fa: "مهندسی" },
+    category: { en: "Data Analytics & Business Intelligence", fa: "تحلیل داده‌ها و هوش تجاری" },
     items: [
-      { name: "Operations Research", level: 4 },
-      { name: "Process Analysis", level: 4 },
-      { name: "Project Management", level: 3 },
-      { name: "Lean", level: 3 },
-    ],
+      { name: "Power BI", level: 3 },
+      { name: "minitab", level: 4 },
   },
   {
-    category: { en: "Business", fa: "کسب‌وکار" },
+    category: { en: "Content Creation & Digital Media", fa: "تولید محتوا و رسانه‌های دیجیتال" },
     items: [
-      { name: "Business Analysis", level: 4 },
-      { name: "Market Analysis", level: 4 },
-      { name: "Financial Analysis", level: 3 },
+      { name: "Adobe Photoshop", level: 4 },
+      { name: "Video Editing", level: 4 },
       { name: "Business Modeling", level: 3 },
     ],
   },
   {
     category: { en: "Technology", fa: "فناوری" },
     items: [
-      { name: "HTML", level: 4 },
-      { name: "CSS", level: 4 },
-      { name: "Git", level: 3 },
+      { name: "HTML", level: 3 },
+      { name: "CSS", level: 3 },
       { name: "GitHub", level: 3 },
-      { name: "Programming", level: 3 },
     ],
   },
 ];
