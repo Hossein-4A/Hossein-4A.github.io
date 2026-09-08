@@ -183,15 +183,31 @@ p { margin: 0; }
 
 .hero {
   position: relative;
-  background: var(--blueprint);
+  background: var(--blueprint) url("assets/images/hero-bg.jpg") center/cover no-repeat;
   color: var(--paper-on-dark);
   overflow: hidden;
   padding: 96px 0 108px;
 }
 
+/* Dark tint over the photo so the white text stays readable.
+   Raise the alpha values (closer to 1) for a darker photo,
+   lower them (closer to 0) to let more of the photo show. */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 28, 46, 0.9) 0%,
+    rgba(13, 28, 46, 0.82) 100%
+  );
+}
+
 .hero-grid {
   position: absolute;
   inset: 0;
+  z-index: 1;
   background-image:
     linear-gradient(var(--line-on-dark) 1px, transparent 1px),
     linear-gradient(90deg, var(--line-on-dark) 1px, transparent 1px);
@@ -205,7 +221,7 @@ html[dir="rtl"] .hero-grid {
   mask-image: radial-gradient(ellipse at top right, #000 30%, transparent 78%);
 }
 
-.hero-content { position: relative; max-width: 680px; }
+.hero-content { position: relative; z-index: 2; max-width: 680px; }
 
 .hero-tag {
   display: inline-flex;
