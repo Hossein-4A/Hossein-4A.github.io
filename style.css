@@ -183,7 +183,7 @@ p { margin: 0; }
 
 .hero {
   position: relative;
-  background: var(--blueprint) url("assets/images/102688.jpg") center/cover no-repeat;
+  background: var(--blueprint) url("assets/images/hero-bg.jpg") center/cover no-repeat;
   color: var(--paper-on-dark);
   overflow: hidden;
   padding: 96px 0 108px;
@@ -570,6 +570,11 @@ html[dir="ltr"] .skill-level-label { text-align: right; }
 .contact-card:hover { background: var(--paper-alt); }
 
 .contact-label { font-size: 16px; font-weight: 600; }
+
+.contact-value { font-size: 15px; color: var(--ink-soft); }
+
+.contact-card.static { cursor: default; }
+.contact-card.static:hover { background: var(--paper); }
 
 .contact-arrow {
   width: 9px;
