@@ -183,7 +183,7 @@ p { margin: 0; }
 
 .hero {
   position: relative;
-  background: var(--blueprint) url("assets/images/hero-bg.jpg") center/cover no-repeat;
+  background: var(--blueprint) url("assets/images/102688.jpg") center/cover no-repeat;
   color: var(--paper-on-dark);
   overflow: hidden;
   padding: 96px 0 108px;
